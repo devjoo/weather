@@ -14,8 +14,7 @@ class SearchBar extends Component {
     }
 
     onInputChange(event){
-        console.log(event.target.value)
-        this.setState({ term : event.target.value })
+        this.setState({ term : event.target.value });
     }
 
     onFormSubmit(event){
@@ -45,8 +44,8 @@ class SearchBar extends Component {
     }
 }
 
-function mapDispatchToProps(dispath) {
-    return bindActionCreators({ fetchWeather }, dispath);
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators({ fetchWeather }, dispatch);
 }
 
-export default connect(null, mapDispatchToProps)(SearchBar)
+export default connect(null, mapDispatchToProps)(SearchBar);

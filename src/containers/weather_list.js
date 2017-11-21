@@ -11,8 +11,7 @@ class WeatherList extends Component {
         const temps = cityData.list.map(weather => weather.main.temp);
         const pressures = cityData.list.map(weather => weather.main.pressure);
         const humidities = cityData.list.map(weather => weather.main.humidity);
-        const lon = cityData.city.coord.lon;
-        const lat = cityData.city.coord.lat;
+        const { lon, lat } = cityData.city.coord;  //ES6로 변경
 
         return  (
             <tr key={name}>

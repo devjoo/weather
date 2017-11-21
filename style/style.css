@@ -1,2 +1,3 @@
 .input-group{margin:20px 0}
 tr,td{vertical-align:middle!important;text-align:center}
+td:first-of-type{width:250px;height:200px}
